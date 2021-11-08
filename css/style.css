@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:white;
+    color:black;
+}
+
+.btn{
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 20px;
+    z-index: 2;
+    font-size: 30px;
+    display: none;
+}
+
+.show{
+    transform: translateX(-400px);
+}
+
+.super-conteiner{
+    width: 90%;
+    margin: auto;
+
+}
+
+.conteiner{
+    margin-top: 20px;
+}
+.conteiner .menu-sup{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.conteiner .menu-sup h1{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color:red;
+
+}
+ul{list-style: none;
+
+}
+.conteiner .menu-inf{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.conteiner .menu-inf nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.conteiner .menu-inf nav ul li{
+    padding: 20px;
+    font-size: 30;
+    border: black 1px solid;
+    margin: 5px;
+    border-radius: 25px 25px 25px 25px;
+    background-color:wheat(58, 180, 58);
+}
+.conteiner .menu-inf nav ul li:hover{
+    padding: 25px;
+    background-color: yellow;
+}
+.logo{
+    width: 350px;
+    height: 200px;
+}
+/*contenido*/
+
+.contenido{
+    margin-bottom: 20px;
+}
+
+.contenido .titulito{
+    display: flex;
+    justify-content: start;
+}
+
+.contenido .principal{
+    display: flex;
+    justify-content: start;
+}
+
+.contenido .mini-contenido{
+    margin-left: 20px;
+}
+
+.contenido .contenidito{
+    display: flex;
+    flex-direction: row;
+}
+
+.contenido img{
+    width: 300px;
+    height: auto;
+}
+
+.contenido .contenidote{
+    margin-left: 20px;
+}
+
+
+.contenido .contiene{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.contenido .contiene p{
+    margin-left: 20px;
+}
+
+.contenido .contiene .contenidito{
+    display: block;
+    margin-left: 20px;
+}
+
+.conteiner .contiene .contenidito .inline{
+    display: inline;
+}
+
+.contenido .contiene .contenidito p{
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 25px;
+}
+
+
+img{
+    width: 700px;
+    height: 700px;
+}
+
+/*Discografia*/
+.contenido-discografia{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.contenido-discografia .img-contenido{
+    width: 300px;
+    height: auto;
+}
+
+.contenidote-discografia{
+    margin-left: 30px;
+}
+
+/*Este es el pie de pagina*/
+
+.footer{
+    background-color: rgb(4, 5, 5);
+    width: 100%;
+    height: auto;
+} 
+.footer ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.footer ul li a{
+    font-size: 20px;
+}
+
+/*Tamaño pantalla 700px*/
+@media (max-width:700px){
+    .super-conteiner .conteiner nav ul{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: gray;
+        opacity: .9;
+        height: 100%;
+    }
+
+    .btn{
+        display: block;
+    }
+
+    .super-conteiner .conteiner nav ul li{
+        border-radius: 0 0 0 0;
+        border: none;
+    }
+
+    .super-conteiner .conteiner nav ul li:hover{
+        background-color: azure;        
+        border-bottom: white 1px solid;
+    }
+}
+/*Tamaño pantalla 500px*/
+
+@media (max-width:500px){
+
+    .logo{
+        width: 150px;
+        height: auto;
+    }
+
+    .contenido .contenidito .img-contenido{
+        width: 200px;
+        height: auto;
+    }
+
+    .contenido .contenidito .mini-contenido{
+        margin-left: 10px;
+    }
+
+    .contenido-discografia .img-contenido{
+        width: 200px;
+        height: auto;
+    }
+
+    .contenido-discografia .contenidote-discografia{
+        margin-left: 10px;
+    }
+
+    .contenido-discografia .contenidote-discografia .titulito-discografia{
+        font-size: 10px;
+    }
+
+}
